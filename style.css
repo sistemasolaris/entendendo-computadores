@@ -1,0 +1,62 @@
+/* CSS Reset */
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+/* Actual CSS */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+    color: #181818;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 175%;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    background-color: #1D3557;
+    color: #E6E6E6;
+}
+
+.nav-container nav {
+    display: flex;
+    width: 100%;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-container nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    color: #A8DADC;
+}
+
+.nav-container nav ul a:hover {
+    color: #F1FAEE;
+}
