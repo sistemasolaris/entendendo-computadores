@@ -137,6 +137,7 @@ p {
 .componente {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 #componente-img {
@@ -147,7 +148,35 @@ p {
     filter: drop-shadow(0px 0px 5px #79A);
 }
 
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.question h2 span {
+    color: #1D3557;
+}
+
+.question p {
+    display: none;
+    padding: 20px;
+    outline: 1px dashed #386898;
+}
+
 .question-options {
     display: flex;
     flex-direction: column;
+}
+
+#q1:has(input:checked)~#a1 {
+    display: block;
+}
+
+#q2:has(input:checked)~#a2 {
+    display: block;
+}
+
+#q3:has(input:checked)~#a3 {
+    display: block;
 }
